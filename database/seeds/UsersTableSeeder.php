@@ -11,8 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-
-    	$users = [
+        $users = [
     		'username' => 'admin',
 	        'email' => 'admin@admin.com',
 	        'password' => bcrypt('admin'), 
@@ -21,8 +20,8 @@ class UsersTableSeeder extends Seeder
 	        'is_admin' => true,
     	];
 
+    	
     	DB::table('users')->insert($users);
-
         factory(App\User::class,60)->create();
     }
 }
