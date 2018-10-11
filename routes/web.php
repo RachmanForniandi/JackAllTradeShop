@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('cek-adminlte', function () {
     return view('index');
 });
+
+Route::get('master/user', function () {
+    return view('master.user');
+});
